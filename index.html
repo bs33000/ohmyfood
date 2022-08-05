@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -6,32 +7,31 @@
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header -->
     <header class="main__header">
-        <h1><a href="index.html"> <img class="main_header_img"
-            src="./assets/img/logo/ohmyfood.png" alt="logo_ohmyfood"></a></h1>
+        <a href="index.html"><img class="logo_main_header" src="./assets/img/logo/ohmyfood.png" alt="logo_ohmyfood"></a>
     </header>
 
     <main class="main">
 
         <!-- Location search form-->
-        <section class="location_search">
+        <section class="location">
+            <i class="fa-solid fa-location-dot -alt"></i>
             <form class="location_searchForm" action="proceedFrom.php" method="post">
-                <span>
-                    <i class="fa-solid fa-location-dot -alt"></i>
-                    <input class="location" type="search" placeholder="Où?"
-                    value="Paris, Belleville">
-                </span>
+                <input class="location" type="search" placeholder="Où?"
+                value="Paris, Belleville">
             </form>
         </section>
 
         <!-- About -->
         <section class="about">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <h2 class="about_title">Réservez le menu qui vous convient</h2>
+            <p class="about_title_sub">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
             <span class="about_btn">
                 <btn>Explorer nos restaurants</btn>
             </span>
@@ -40,21 +40,21 @@
         <!-- Fonctionnement -->
         <section class="operation">
             <h2>Fonctionnement</h2>
-            <ul class="operation__steps">
+            <ul class="operation_steps">
                 <li>
-                    <div class="operation__steps--number">1</div>
-                    <div><i class="fas fa-mobile-alt operation__steps--icon"></i></div>
-                    <p>Choisissez un restaurant</p>
+                    <span class="operation_steps_number">1</span>
+                    <span><i class="fas fa-mobile-alt operation_steps_icon"></i></span>
+                    <p class="operation_steps_label">Choisissez un restaurant</p>
                 </li>
                 <li>
-                    <div class="operation__steps--number">2</div>
-                    <div><i class="fas fa-list-ul operation__steps--icon"></i></div>
-                    <p>Composez votre menu</p>
+                    <span class="operation_steps_number">2</span>
+                    <span><i class="fas fa-list-ul operation_steps_icon"></i></span>
+                    <p class="operation_steps_label">Composez votre menu</p>
                 </li>
                 <li>
-                    <div class="operation__steps--number">3</div>
-                    <div><i class="fas fa-store operation__steps--icon"></i></div>
-                    <p>Dégustez au restaurant</p>
+                    <span class="operation_steps_number">3</span>
+                    <span><i class="fas fa-store operation_steps_icon"></i></span>
+                    <p class="operation_steps_label">Dégustez au restaurant</p>
                 </li>
             </ul>
         </section>
@@ -149,7 +149,7 @@
 
     <!--Footer-->
     <footer>
-        <h3><img class="main_header_img" src="./assets/img/logo/ohmyfood.png" alt="logo_ohmyfood"></a></h3>
+        <h3>ohmyfood</h3>
         <ul>
             <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
             <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>

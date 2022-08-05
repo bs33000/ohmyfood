@@ -1,0 +1,11 @@
+.card img {
+    @include card-img ;
+}
+
+.card figure {
+    @include card-figure;
+}
+
+.card figcaption {
+    @include card-figcaption;
+}

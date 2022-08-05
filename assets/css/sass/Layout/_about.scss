@@ -1,0 +1,20 @@
+.about {
+    @include about;
+    .about_title {
+      font-weight: bolder;
+      margin-top: 0rem;
+      padding-top: 2rem;
+    }
+    .about_title_sub {
+      color: dimgrey;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    p {
+      color: $backgroundcolor-secondary;
+    }
+  }
+
+.about_btn {
+  @include about_btn;
+}

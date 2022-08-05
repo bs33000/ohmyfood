@@ -1,0 +1,25 @@
+.operation {
+  @include operation
+}
+
+h2 {
+  padding-left: 1rem;
+}
+
+.operation_steps li {
+  @include operation_steps;
+  list-style: none
+}
+
+.operation_steps_number{
+  @include operation_steps_number;
+}
+
+.operation_steps_icon i {
+  color: #b2b2b2;
+  margin: 0 1rem 0 1rem;
+}
+
+.operation_steps_label {
+  padding-left: 2rem;
+}

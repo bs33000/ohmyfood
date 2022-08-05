@@ -1,0 +1,8 @@
+.location {
+    @include location
+  }
+
+.location_searchForm{
+  display: flex;
+  justify-content: center;
+}
