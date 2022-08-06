@@ -1,3 +1,50 @@
+
+.restaurants {
+    background-color: $backgroundcolor-secondary;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.restaurant_title {
+    padding: 1rem 0 0 0;
+}
+
+.heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h4 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.card {
+    padding: 0 0 2rem 0;
+    a {
+        size: 0;
+    }
+    img {
+        @include card-img ;
+    }
+    figure {
+        @include card-figure;
+    }
+    figcaption {
+        @include card-figcaption;
+        p {
+            color: dimgray;
+            margin: 0;
+        }
+    }
+}
+
+/*
+.card > a {
+    size: 0;
+}
+
 .card img {
     @include card-img ;
 }
@@ -8,4 +55,18 @@
 
 .card figcaption {
     @include card-figcaption;
+    p {
+        color: dimgray;
+        margin: 0;
+    }
+}*/
+
+.card_new {
+    color: #008766;
+    background: $color-tertiary;
+    border: 5px solid $color-tertiary;
+    border-radius: 5px;
+    position: absolute;
+    right: 2rem;
+    /* top: 1rem;*/
 }
