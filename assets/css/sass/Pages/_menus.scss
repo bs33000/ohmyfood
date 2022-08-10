@@ -1,0 +1,130 @@
+.main_header{
+    display: flex;
+    align-items: center;
+}
+
+.header_img img{
+    object-fit: cover;
+    height: 250px;
+}
+
+.menu_header {
+    @include menu_header;
+}
+
+.arrow {
+    position: absolute;
+    left: 20px;
+    font-weight: bolder  ;
+}
+
+.menu {
+    background-color: $backgroundcolor-secondary;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    margin-top: -3rem;
+    padding-bottom: 1rem;
+    h2 {
+        margin: 0;
+        padding: 1rem 0 0 1rem;
+        font-weight: lighter;
+        font-size: larger;
+        color: dimgrey;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.line {
+    width: 3rem;
+    border: 2px solid $color-tertiary;
+    margin-left: 1rem;
+}
+
+.menu_title {
+    @include menu_title;
+}
+
+
+.dish_card_content {
+    @include dish_card_content;
+    h4 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        color: dimgrey;
+    }
+    .dish_card_content_detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.checked {
+    display: none;
+}
+
+.menu_btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.order_btn {
+    @include about_btn;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    width: 50%;
+    &:hover {
+        background-color: lighten(#9356dc, 10%);
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px #000;
+    }
+}
+
+
+
+
+
+/*
+
+.last_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.last_line p {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.last_line span {
+    margin-right: 5px;
+}
+
+.meals h4 {
+    margin: 0;
+}
+
+.starter h3, .dish h3, .dessert h3 {
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+*/
+
+

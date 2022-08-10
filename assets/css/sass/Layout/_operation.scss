@@ -2,10 +2,15 @@
   @include operation
 }
 
-.operation > h2 {
+.operation {
+  h2 {
   padding-top: 1rem;
   padding-left: 1rem;
   margin: 0;
+  }
+  ul {
+      padding-left: 1rem;
+  }
 }
 
 .operation_steps > li {
