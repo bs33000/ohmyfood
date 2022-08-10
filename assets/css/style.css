@@ -1,5 +1,22 @@
 body, html {
   font-family: Roboto, sans-serif;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 .logo_main_header {
@@ -14,32 +31,35 @@ body, html {
 }
 
 .about {
-  background: gainsboro;
+  background: #f6f6f6;
   text-align: center;
   width: 100%;
-  padding: 0rem 1rem 2rem 1rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 .about .about_title {
   font-weight: bolder;
-  margin-top: 0rem;
-  padding-top: 2rem;
+  margin: 0rem;
+  padding: 0rem;
 }
 .about .about_title_sub {
   color: dimgrey;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 2rem;
 }
 .about p {
-  color: gainsboro;
+  color: #f6f6f6;
 }
 
 .about_btn {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
   border-radius: 30px;
-  padding: 10px 5px;
+  padding: 0.75rem 1.75rem;
   color: #fff;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
 }
@@ -52,7 +72,7 @@ body, html {
   border: none;
   background: silver;
   font-size: 1rem;
-  padding: 1rem 0 1rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   margin: none;
   width: 100%;
 }
@@ -64,23 +84,32 @@ body, html {
 
 .operation {
   width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
-h2 {
+.operation > h2 {
+  padding-top: 1rem;
   padding-left: 1rem;
+  margin: 0;
 }
 
-.operation_steps li {
-  margin: 1rem 1rem 1rem 1rem;
+.operation_steps > li {
+  margin: 0 1rem 1rem 0;
   display: flex;
+  -webkit-padding-start: none;
+          padding-inline-start: none;
   justify-content: flex-start;
   align-items: center;
+  list-style: none;
   background: #f6f6f6;
   border: 5px solid #f6f6f6;
   border-radius: 10px;
   font-weight: bold;
   box-shadow: 4px 4px 6px #e9e9e9;
-  list-style: none;
+  /*
+  max-width: 375px;
+  */
 }
 
 .operation_steps_number {
@@ -97,7 +126,7 @@ h2 {
   right: 10px;
 }
 
-.operation_steps_icon i {
+.operation_steps_icon > i {
   color: #b2b2b2;
   margin: 0 1rem 0 1rem;
 }
@@ -106,6 +135,33 @@ h2 {
   padding-left: 2rem;
 }
 
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.restaurant_title {
+  padding: 1rem 0 0 0;
+}
+
+.heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heart h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.card {
+  padding: 0 0 2rem 0;
+}
+.card a {
+  size: 0;
+}
 .card img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -113,40 +169,77 @@ h2 {
   border-top-right-radius: 25px;
   width: 100%;
   height: 100%;
-  max-height: 220px;
+  max-height: 10rem;
 }
-
 .card figure {
   margin: 0;
 }
-
 .card figcaption {
   margin: 0;
-  padding: 10px;
+  padding: 0 1rem 1rem 1rem;
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  max-height: 4srem;
+}
+.card figcaption p {
+  color: dimgray;
+  margin: 0;
+}
+
+/*
+.card > a {
+    size: 0;
+}
+
+.card img {
+    @include card-img ;
+}
+
+.card figure {
+    @include card-figure;
+}
+
+.card figcaption {
+    @include card-figcaption;
+    p {
+        color: dimgray;
+        margin: 0;
+    }
+}*/
+.card_new {
+  color: #008766;
+  background: #99E2D0;
+  border: 5px solid #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+  right: 2rem;
+  /* top: 1rem;*/
 }
 
 footer {
   background-color: #353535;
-  padding-top: 1rem;
   padding-right: 2rem;
   padding-left: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   color: white;
 }
 
-h3 {
+footer > h3 {
   font-family: Shrikhand, sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
+  margin: 0;
 }
 
-ul {
+footer > ul {
   list-style-type: none;
-  padding: 0.5rem 0 1rem 0;
+  padding: 0.5rem 0 0rem 0;
 }
-ul li {
-  padding-bottom: 1rem;
+footer > ul li {
+  padding-bottom: 0.5rem;
 }
-ul li a {
+footer > ul li a {
   color: white;
 }
 

@@ -2,20 +2,25 @@
   @include operation
 }
 
-h2 {
+.operation > h2 {
+  padding-top: 1rem;
   padding-left: 1rem;
+  margin: 0;
 }
 
-.operation_steps li {
+.operation_steps > li {
   @include operation_steps;
-  list-style: none
+
+  /*
+  max-width: 375px;
+  */
 }
 
 .operation_steps_number{
   @include operation_steps_number;
 }
 
-.operation_steps_icon i {
+.operation_steps_icon > i {
   color: #b2b2b2;
   margin: 0 1rem 0 1rem;
 }

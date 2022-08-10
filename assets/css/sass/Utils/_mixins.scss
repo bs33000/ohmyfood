@@ -17,7 +17,7 @@
   border: none;
   background: $backgroundcolor-location;
   font-size: 1rem;
-  padding: 1rem 0 1rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   margin: none;
   width: 100%;
 }
@@ -26,31 +26,35 @@
   background:$backgroundcolor-secondary;
   text-align: center;
   width: 100%;
-  padding: $padding-general;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 @mixin about_btn {
-  /*
-  background: linear-gradient(#e66465, #9198e5);
-  */
-  border: 1px solid transparent;
+  background: linear-gradient($color-secondary, $color-primary);
+  border: none;
   border-radius: 30px;
-  padding: 10px 5px;
+  padding: 0.75rem 1.75rem;
   color: #fff;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
 }
 
 @mixin operation {
   width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 @mixin operation_steps {
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 0;
   display: flex;
+  padding-inline-start: none;
   justify-content: flex-start;
   align-items: center;
+  list-style: none;
   background: #f6f6f6;
   border: 5px solid #f6f6f6;
   border-radius: 10px;
@@ -86,7 +90,7 @@
   border-top-right-radius: 25px;
   width: 100%;
   height: 100%;
-  max-height: 220px;
+  max-height: 10rem;
 }
 
 @mixin card-figure {
@@ -95,13 +99,17 @@
 
 @mixin card-figcaption {
   margin: 0;
-  padding: 10px;
+  padding: 0 1rem 1rem 1rem;
+  background-color: $backgroundcolor-main;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  max-height: 4srem;
 }
 
 @mixin footer{
   background-color: $backgroundcolor-footer;
-  padding-top: 1rem;
   padding-right: 2rem;
   padding-left: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   color: white;
 }

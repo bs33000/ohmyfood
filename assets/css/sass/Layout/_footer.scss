@@ -2,19 +2,20 @@ footer {
   @include footer
 }
 
-h3 {
+footer > h3 {
   font-family: Shrikhand, sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
+  margin: 0;
 }
 
-ul {
+footer > ul {
   list-style-type: none;
-  padding: 0.5rem 0 1rem 0;
+  padding: 0.5rem 0 0rem 0;
   li {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     
-    a {
+  a {
       color: white;
     }
   }
@@ -23,6 +24,7 @@ ul {
 .fa-utensils {
   margin-right: 0.5rem;
 }
+
 .fa-hands-helping {
   margin-right: 0.5rem;
 }
