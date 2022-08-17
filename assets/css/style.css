@@ -22,6 +22,9 @@ a:active {
 /***********************************************/
 /**************** Mixins for menus *************/
 /***********************************************/
+/*-----------------------------------------------------------*/
+/* ----------------------- RESPONSIVE -----------------------*/
+/*-----------------------------------------------------------*/
 /*
   margin: 0 1rem 1rem 0;
   display: flex;
@@ -111,7 +114,7 @@ transition: padding-right 450ms ease-in-out;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 30px;
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 2.75rem;
   color: #fff;
   font-size: 1rem;
   font-weight: normal;
@@ -152,7 +155,13 @@ transition: padding-right 450ms ease-in-out;
   padding-left: 1rem;
 }
 
-.operation_steps > li {
+@media screen and (min-width: 748px) {
+  .operation_steps {
+    display: flex;
+    justify-content: center;
+  }
+}
+.operation_steps li {
   margin: 0 1rem 1rem 0;
   display: flex;
   -webkit-padding-start: none;
@@ -165,9 +174,11 @@ transition: padding-right 450ms ease-in-out;
   border-radius: 10px;
   font-weight: bold;
   box-shadow: 4px 4px 6px #e9e9e9;
-  /*
-  max-width: 375px;
-  */
+}
+@media screen and (min-width: 748px) {
+  .operation_steps li {
+    max-width: 375px;
+  }
 }
 
 .operation_steps_number {
@@ -238,7 +249,7 @@ transition: padding-right 450ms ease-in-out;
   background-color: white;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  max-height: 4srem;
+  /*max-height: 4rem;*/
 }
 .card figcaption p {
   color: dimgray;
@@ -266,13 +277,18 @@ transition: padding-right 450ms ease-in-out;
     }
 }*/
 .card_new {
+  display: none;
   color: #008766;
   background: #99E2D0;
   border: 5px solid #99E2D0;
-  border-radius: 5px;
-  position: absolute;
-  right: 2rem;
-  /* top: 1rem;*/
+  border-radius: 0px;
+  position: relative;
+  left: 16rem;
+  top: 3rem;
+}
+
+.card_new.active {
+  display: inline;
 }
 
 footer {
@@ -313,11 +329,21 @@ footer > ul li a {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 748px) {
+  .main_header {
+    justify-content: space-around;
+  }
+}
 
 .header_img img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 250px;
+}
+@media screen and (min-width: 748px) {
+  .header_img img {
+    width: 100%;
+  }
 }
 
 .menu_header {
@@ -367,6 +393,14 @@ footer > ul li a {
   padding: 1rem 2rem 1rem 1rem;
 }
 
+@media screen and (min-width: 748px) {
+  .dish_card {
+    display: flex;
+    justify-content: first baseline;
+    padding: 0 5rem 0 5rem;
+  }
+}
+
 .dish_card_content {
   background-color: white;
   border-radius: 15px;
@@ -389,6 +423,20 @@ footer > ul li a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 748px) {
+  .dish_card_content {
+    display: inline-block;
+    width: 500px;
+    /*
+    */
+    /*
+    display: flex;
+    flex-direction: ;
+    justify-content: stretch;
+    padding: 0 5rem 0 5rem;
+    */
+  }
+}
 
 .checked {
   display: none;
@@ -404,7 +452,7 @@ footer > ul li a {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 30px;
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 2.75rem;
   color: #fff;
   font-size: 1rem;
   font-weight: normal;
@@ -413,8 +461,7 @@ footer > ul li a {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
-  padding: 0.75rem;
-  width: 50%;
+  padding: 0.75rem 2.75rem 0.75rem 2.75rem;
 }
 .order_btn:hover {
   background-color: #ae80e5;

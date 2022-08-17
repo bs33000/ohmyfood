@@ -1,11 +1,17 @@
 .main_header{
     display: flex;
     align-items: center;
+    @include not_mobile {
+        justify-content: space-around;
+      }
 }
 
 .header_img img{
     object-fit: cover;
     height: 250px;
+    @include not_mobile {
+        width: 100%;
+      }
 }
 
 .menu_header {
@@ -50,6 +56,14 @@
     @include menu_title;
 }
 
+.dish_card {
+    @include not_mobile {
+        display: flex;
+        justify-content: first baseline;
+        padding: 0 5rem 0 5rem;
+    }
+}
+
 
 .dish_card_content {
     @include dish_card_content;
@@ -66,6 +80,22 @@
         justify-content: space-between;
         align-items: center;
     }
+    
+    @include not_mobile {
+        display: inline-block;
+        width: 500px;
+        /*
+        */
+        
+
+        /*
+        display: flex;
+        flex-direction: ;
+        justify-content: stretch;
+        padding: 0 5rem 0 5rem;
+        */
+    }
+   
 }
 
 .checked {
@@ -83,8 +113,8 @@
     display: flex;
     justify-content: center;
     margin: 1rem 0;
-    padding: 0.75rem;
-    width: 50%;
+    padding: 0.75rem 2.75rem 0.75rem 2.75rem;
+
     &:hover {
         background-color: lighten(#9356dc, 10%);
         background-blend-mode: lighten;

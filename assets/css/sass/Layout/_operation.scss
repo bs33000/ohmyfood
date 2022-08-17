@@ -13,13 +13,21 @@
   }
 }
 
-.operation_steps > li {
-  @include operation_steps;
+.operation_steps {
+  @include not_mobile {
+  display: flex;
+  justify-content: center;
+  }
 
-  /*
-  max-width: 375px;
-  */
+  li {
+  @include operation_steps;
+  @include not_mobile {
+    max-width: 375px;
+  }
 }
+}
+
+
 
 .operation_steps_number{
   @include operation_steps_number;

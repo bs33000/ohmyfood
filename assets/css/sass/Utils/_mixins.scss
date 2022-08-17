@@ -34,7 +34,7 @@
   background: linear-gradient($color-secondary, $color-primary);
   border: none;
   border-radius: 30px;
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 2.75rem;
   color: #fff;
   font-size: 1rem;
   font-weight: normal;
@@ -103,7 +103,7 @@
   background-color: $backgroundcolor-main;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  max-height: 4srem;
+  /*max-height: 4rem;*/
 }
 
 @mixin footer{
@@ -147,8 +147,19 @@
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
-
 }
+
+/*-----------------------------------------------------------*/
+/* ----------------------- RESPONSIVE -----------------------*/
+/*-----------------------------------------------------------*/
+@mixin not_mobile {
+  @media screen and (min-width:map-get($breakpoints, not_mobile)){
+    @content;
+  }
+}
+
+
+
   /*
     margin: 0 1rem 1rem 0;
     display: flex;
