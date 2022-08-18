@@ -1,7 +1,8 @@
 @import "./sass/Base/fonts";
-@import "./sass/Utils/variables","./sass/Utils/placeholder","./sass/Utils/mixins";
+@import "./sass/Utils/variables","./sass/Utils/placeholder","./sass/Utils/mixins",
+        "./sass/Utils/keyframes";
 @import "./sass/Layout/main_header", "./sass/Layout/about",
          "./sass/Layout/location", "./sass/Layout/operation",
          "./sass/Layout/restaurants", "./sass/Layout/footer";
 @import "./sass/Pages/menus";
-
+@import "./sass/Components/heart_icon";
