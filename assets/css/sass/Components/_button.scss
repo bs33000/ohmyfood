@@ -1,0 +1,13 @@
+.order_btn {
+    @include about_btn;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0.75rem 2.75rem 0.75rem 2.75rem;
+    
+    &:hover {
+        background-color: lighten(#9356dc, 10%);
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px #000;
+    }
+}

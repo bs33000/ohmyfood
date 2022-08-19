@@ -9,6 +9,7 @@
 .header_img img{
     object-fit: cover;
     height: 250px;
+    width: 100%;
     @include not_mobile {
         width: 100%;
     }
@@ -56,6 +57,7 @@
     @include menu_title;
 }
 
+
 .dish_card {
     @include not_mobile {
         display: flex;
@@ -69,38 +71,38 @@
     @include dish_card_content;
     h4 {
         margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p {
         margin: 0;
         color: dimgrey;
     }
-    .dish_card_content_detail {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
     @include not_mobile {
         display: inline-block;
         width: 500px;
-        /*
-        */
-        
-        
-        /*
-        display: flex;
-        flex-direction: ;
-        justify-content: stretch;
-        padding: 0 5rem 0 5rem;
-        */
     }
-    
 }
 
-.checked {
-    display: none;
+.dish_card_content_detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
+
+
+.checked {
+    /*display: none;*/
+    @include checked;
+}
+
 
 .menu_btn {
     display: flex;
@@ -108,6 +110,7 @@
     padding-top: 2rem;
 }
 
+/*
 .order_btn {
     @include about_btn;
     display: flex;
@@ -121,6 +124,7 @@
         box-shadow: 4px 4px 6px #000;
     }
 }
+*/
 
 
 .starters {
@@ -134,37 +138,3 @@
 .desserts {
     animation: fadein 5s ease-in-out;
 }
-
-
-/*
-
-.last_line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 1.5em;
-}
-
-.last_line p {
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.last_line span {
-    margin-right: 5px;
-}
-
-.meals h4 {
-    margin: 0;
-}
-
-.starter h3, .dish h3, .dessert h3 {
-    padding-left: 10px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-*/
-
-

@@ -143,10 +143,43 @@
   background-color: $backgroundcolor-main;
   border-radius: 15px;
   margin: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 300ms ease-in-out;
+  &:hover {
+    padding-right: 6rem;
+  }
+  &:hover .checked {
+    opacity: 1;
+    transform: translate(-1rem);
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(360deg) ;
+    color: #fff;
+    transition: transform 300ms ease-in-out;
+  }
+}
+
+@mixin checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-tertiary;
+  /*width: 3rem;*/
+  /*height: 1rem;*/
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 0.7rem;
+  right: -1rem;
+  top: 0;
+  opacity: 0 ;
+  transition: transform 500ms ease-in-out;
 }
 
 /*-----------------------------------------------------------*/
@@ -157,61 +190,3 @@
     @content;
   }
 }
-
-
-
-  /*
-    margin: 0 1rem 1rem 0;
-    display: flex;
-    padding-inline-start: none;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-    background: #f6f6f6;
-    border: 5px solid #f6f6f6;
-    border-radius: 10px;
-    font-weight: bold;
-    box-shadow: 4px 4px 6px #e9e9e9;
- 
-  */
-
-  /*
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  transition: padding-right 450ms ease-in-out;
-  &:hover {
-    padding-right: 75px;
-  }
-  &:hover .cross {
-    opacity: 1;
-    transform: translate(-50px);
-  }
-  &:hover .fa-check-circle {
-    transform: rotate(360deg) ;
-  }
-  */
-
-
-/*
-@mixin cross {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-tertiary;
-  width: 50px;
-  height: 63px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  position: absolute;
-  padding: 20px;
-  right: -50px;
-  top: 0;
-  opacity: 0;
-  transition: transform 330ms ease-in-out;
-  & .fa-check-circle {
-    color: #fff;
-    transition: transform 500ms ease-in-out;
-  }
-}
-*/

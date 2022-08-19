@@ -40,27 +40,6 @@
     }
 }
 
-/*
-.card > a {
-    size: 0;
-}
-
-.card img {
-    @include card-img ;
-}
-
-.card figure {
-    @include card-figure;
-}
-
-.card figcaption {
-    @include card-figcaption;
-    p {
-        color: dimgray;
-        margin: 0;
-    }
-}*/
-
 .card_new {
     display: none;
     color: #008766;
@@ -68,7 +47,7 @@
     border: 5px solid $color-tertiary;
     border-radius: 0px;
     position: relative;
-    left: 16rem;
+    left: 15rem;
     top: 3rem;
 }
 
