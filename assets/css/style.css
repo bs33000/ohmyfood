@@ -99,6 +99,22 @@ transition: padding-right 450ms ease-in-out;
     opacity: 1;
   }
 }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .logo_main_header {
   display: flex;
   justify-content: center;
@@ -496,6 +512,21 @@ footer > ul li a {
   box-shadow: 4px 4px 6px #000;
 }
 
+.starters {
+  -webkit-animation: fadein 1s ease-in-out;
+          animation: fadein 1s ease-in-out;
+}
+
+.Mains {
+  -webkit-animation: fadein 3s ease-in-out;
+          animation: fadein 3s ease-in-out;
+}
+
+.desserts {
+  -webkit-animation: fadein 5s ease-in-out;
+          animation: fadein 5s ease-in-out;
+}
+
 /*
 
 .last_line {
@@ -531,13 +562,13 @@ footer > ul li a {
   cursor: pointer;
 }
 .fill:hover {
-  -webkit-animation: fill 0.3s ease-in-out;
-          animation: fill 0.3s ease-in-out;
+  -webkit-animation: fill 300ms ease-in-out;
+          animation: fill 300ms ease-in-out;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
   font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
