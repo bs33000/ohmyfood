@@ -56,7 +56,7 @@
 
 .loader_icon {
     position: relative;
-    top: 10%;
+    top: 5%;
     color: #fff;
     animation: icon-animation 0.4s linear;
     animation-iteration-count: 2;
@@ -67,8 +67,9 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-    top: 25%;
+    top: 45%;
     margin: 0 5rem 0 5rem;
+
 }
 
 .loader_ohmyfood span {
@@ -95,9 +96,6 @@
 
 .loader_chef {
     /*display: none;*/
-    position: fixed;
-    top: 50%;
-    right: 30%;
 }
 
 @keyframes chef-animation {
@@ -114,8 +112,8 @@
 .loader_chef_img {
     width: 150px;
     height: 150px;
+    object-fit: scale-down;
     border-radius: 50%;
-
     animation: chef-animation 0.3s ease-in;
     animation-delay: 0s;
     opacity: 1;
