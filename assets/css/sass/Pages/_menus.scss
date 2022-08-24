@@ -57,7 +57,6 @@
     @include menu_title;
 }
 
-
 .dish_card {
     @include not_mobile {
         display: flex;
@@ -65,7 +64,6 @@
         padding: 0 5rem 0 5rem;
     }
 }
-
 
 .dish_card_content {
     @include dish_card_content;

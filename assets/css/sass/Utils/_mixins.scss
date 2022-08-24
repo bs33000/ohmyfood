@@ -55,8 +55,8 @@
   justify-content: flex-start;
   align-items: center;
   list-style: none;
-  background: #f6f6f6;
-  border: 5px solid #f6f6f6;
+  background: $backgroundcolor-secondary;
+  border: 5px solid $backgroundcolor-secondary;
   border-radius: 10px;
   font-weight: bold;
   box-shadow: 4px 4px 6px #e9e9e9;
@@ -124,7 +124,7 @@
   align-items: center;
 }
 @mixin main_menu {
-  background-color: #f6f6f6;
+  background-color: $backgroundcolor-secondary;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
