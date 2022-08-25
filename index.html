@@ -10,13 +10,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-   
-    <!--
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
-    -->
 </head>
 
 <body>
@@ -46,22 +39,22 @@
     <main class="main">
 
         <!-- Location search form-->
-        <section class="location">
+        <div class="location">
             <i class="fa-solid fa-location-dot -alt"></i>
             <form class="location_searchForm" action="proceedFrom.php" method="post">
                 <input class="location" type="search" placeholder="Où?"
                 value="Paris, Belleville">
             </form>
-        </section>
+        </div>
 
         <!-- About -->
-        <section class="about">
+        <div class="about">
             <h2 class="about_title">Réservez le menu qui <br> vous convient</h2>
             <p class="about_title_sub">Découvrez des restaurants d'exception, <br> sélectionnés par nos soins</p>
             <span class="about_btn">
-                <btn>Explorer nos restaurants</btn>
+                <button class="format_button">Explorer nos restaurants</button>
             </span>
-        </section>
+        </div>
 
         <!-- Fonctionnement -->
         <section class="operation">
@@ -87,14 +80,12 @@
 
         <!-- Restaurants -->
         <section class="restaurants">
-            <span class="restaurant_title">
-                <h2>Restaurants</h2>
-            </span>
+            <h2 class="restaurant_title">Restaurants</h2>  
 
             <div class="card">
                 <span class="card_new active">Nouveau</span>
                 <a href="./pages/la_palette_du_gout.html">
-                    <div>
+                    <figure>
                         <img src="./assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                         <figcaption>
                             <div class="heart">
@@ -105,7 +96,7 @@
                             </div>
                             <p>Ménilmontant</p>
                         </figcaption>
-                    </div>
+                    </figure>
                 </a>
             </div>
 
@@ -176,6 +167,7 @@
         </ul>
     </footer>
 
+    <script src="https://kit.fontawesome.com/5812a3240b.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/5812a3240b.js" crossorigin="anonymous"></script>
+
 </html>

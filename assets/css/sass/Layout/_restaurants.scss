@@ -22,9 +22,6 @@
 
 .card {
     padding: 0 0 2rem 0;
-    a {
-        size: 0;
-    }
     img {
         @include card-img ;
     }

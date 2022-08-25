@@ -213,20 +213,7 @@ body {
 }
 
 .about_btn {
-  background: linear-gradient(#FF79DA, #9356DC);
-  border: none;
-  border-radius: 30px;
-  padding: 0.75rem 2.75rem;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: normal;
-  box-shadow: 4px 4px 6px #aaa;
-  cursor: pointer;
-}
-.about_btn:hover {
-  background-color: #ae80e5;
-  background-blend-mode: lighten;
-  box-shadow: 4px 4px 6px #000;
+  margin: 3rem;
 }
 
 .location {
@@ -238,7 +225,6 @@ body {
   background: silver;
   font-size: 1rem;
   padding: 0.5rem 0 0.5rem 0;
-  margin: none;
   width: 100%;
 }
 
@@ -271,8 +257,6 @@ body {
 .operation_steps li {
   margin: 0 1rem 1rem 0;
   display: flex;
-  -webkit-padding-start: none;
-          padding-inline-start: none;
   justify-content: flex-start;
   align-items: center;
   list-style: none;
@@ -334,9 +318,6 @@ body {
 
 .card {
   padding: 0 0 2rem 0;
-}
-.card a {
-  size: 0;
 }
 .card img {
   -o-object-fit: cover;
@@ -484,7 +465,7 @@ footer > ul li a {
 @media screen and (min-width: 748px) {
   .dish_card {
     display: flex;
-    justify-content: first baseline;
+    justify-content: flex-start;
     padding: 0 5rem 0 5rem;
   }
 }
@@ -613,27 +594,36 @@ footer > ul li a {
   font-weight: bold;
 }
 
-.order_btn {
-  background: linear-gradient(#FF79DA, #9356DC);
+.format_button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 30px;
-  padding: 0.75rem 2.75rem;
   color: #fff;
-  font-size: 1rem;
-  font-weight: normal;
+  padding: 0.75rem 2.75rem 0.75rem 2.75rem;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0;
-  padding: 0.75rem 2.75rem 0.75rem 2.75rem;
 }
-.order_btn:hover {
+.format_button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #000;
 }
 
+/*
+.order_btn {
+    @include about_btn;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0.75rem 2.75rem 0.75rem 2.75rem;
+
+    &:hover {
+        background-color: lighten(#9356dc, 10%);
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px #000;
+    }
+}
+*/
 .loader {
   /*display: none;*/
   position: fixed;

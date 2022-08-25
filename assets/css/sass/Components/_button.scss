@@ -1,3 +1,13 @@
+.format_button{
+    @include format_btn;
+    &:hover {
+        background-color: lighten($color-primary, 10%);
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px #000;
+    }
+}
+
+/*
 .order_btn {
     @include about_btn;
     display: flex;
@@ -11,3 +21,5 @@
         box-shadow: 4px 4px 6px #000;
     }
 }
+*/
+
