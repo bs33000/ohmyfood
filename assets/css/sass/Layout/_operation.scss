@@ -4,27 +4,27 @@
 
 .operation {
   h2 {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  margin: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 0;
   }
   ul {
-      padding-left: 1rem;
+    padding-left: 1rem;
   }
 }
 
 .operation_steps {
   @include not_mobile {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 
   li {
-  @include operation_steps;
-  @include not_mobile {
-    max-width: 375px;
+    @include operation_steps;
+    @include not_mobile {
+      max-width: 375px;
+    }
   }
-}
 }
 
 

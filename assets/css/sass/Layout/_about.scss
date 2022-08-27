@@ -1,17 +1,17 @@
 .about {
-    @include about;
-    .about_title {
-      font-weight: bolder;
-      margin: 0rem;
-      padding: 0rem;
-    }
-    .about_title_sub {
-      color: dimgrey;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 2rem;
-    }
-    p {
-      color: $backgroundcolor-secondary;
-    }
+  @include about;
+  .about_title {
+    font-weight: bolder;
+    margin: 0rem;
+    padding: 0rem;
   }
+  .about_title_sub {
+    color: dimgrey;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+  p {
+    color: $backgroundcolor-secondary;
+  }
+}
