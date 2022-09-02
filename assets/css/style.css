@@ -189,6 +189,11 @@ body {
   height: 50%;
   width: 50%;
 }
+@media screen and (min-width: 748px) {
+  .logo_main_header {
+    width: 30%;
+  }
+}
 
 .about {
   background: #f6f6f6;
@@ -461,8 +466,9 @@ footer > ul li a {
 
 @media screen and (min-width: 748px) {
   .dish_card {
-    display: flex;
-    justify-content: flex-start;
+    /*
+     display: flex;
+     justify-content: flex-start;*/
     padding: 0 5rem 0 5rem;
   }
 }
@@ -479,6 +485,12 @@ footer > ul li a {
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 300ms ease-in-out;
+  /*
+  @include not_mobile {       
+      display: inline-block;
+      justify-content: center;       
+      width: 500px;
+  }*/
 }
 .dish_card_content:hover {
   padding-right: 6rem;
@@ -490,7 +502,7 @@ footer > ul li a {
 .dish_card_content:hover .fa-check-circle {
   transform: rotate(360deg);
   color: #fff;
-  transition: transform 300ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 .dish_card_content h4 {
   margin: 0;
@@ -501,12 +513,6 @@ footer > ul li a {
 .dish_card_content p {
   margin: 0;
   color: dimgrey;
-}
-@media screen and (min-width: 748px) {
-  .dish_card_content {
-    display: inline-block;
-    width: 500px;
-  }
 }
 
 .dish_card_content_detail {
@@ -536,7 +542,9 @@ footer > ul li a {
   right: -1rem;
   top: 0;
   opacity: 0;
+  /*
   transition: transform 500ms ease-in-out;
+  */
 }
 
 .menu_btn {
