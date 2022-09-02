@@ -8,7 +8,7 @@
   height: 50%;
   width: 50%;
   @include not_mobile {
-    width: 30%;
+    width: auto;
   }
 }
 

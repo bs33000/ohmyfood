@@ -191,7 +191,7 @@ body {
 }
 @media screen and (min-width: 748px) {
   .logo_main_header {
-    width: 30%;
+    width: auto;
   }
 }
 
